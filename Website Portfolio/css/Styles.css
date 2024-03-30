@@ -5,10 +5,36 @@ body {
     padding: 0;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Apply Background Gradient to Entire Website */
+body {
+    background: linear-gradient(to bottom right, #87CEEB, #90EE90);
+    /* Other body styles */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000; /* Default text color */
+}
+
+/* Header Styles */
 header {
-    background-color: #333;
+    background-color: black; /* Change the background color to black */
     color: #fff;
-    padding: 10px;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
 nav ul {
@@ -23,32 +49,128 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #FAFAFA;
     text-decoration: none;
 }
 
-main {
-    padding: 20px;
+/* Hero Styles */
+#hero {
+    background-image: url('hero-background.jpg'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
 }
 
-/* Portfolio Styles */
+#hero h2 {
+    color: #000; /* Change text color to black */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    color: #000; /* Change text color to black */
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: beige; /* Change button background color to beige */
+    color: #000; /* Change text color to black */
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none; /* Remove border */
+    cursor: pointer; /* Add cursor pointer on hover */
+}
+
+.btn:hover {
+    background-color: #e0e0e0; /* Change button background color on hover */
+}
+
+/* About Section Styles */
+#about {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Skills Section Styles with Gradient Background */
+#skills {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 150px;
+    margin: 0 20px 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 5px;
+}
+
+/* Portfolio Section Styles */
+#portfolio {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 20px;
 }
 
-.portfolio-item {
-    border: 1px solid #ccc;
-    padding: 10px;
+.project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 100px 0;
     text-align: center;
 }
 
-.portfolio-item img {
-    max-width: 100%;
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
-/* Contact Form Styles */
 .form-group {
     margin-bottom: 20px;
 }
@@ -57,18 +179,43 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: beige;
+    color: #000;
+    padding: 12px 24px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #e0e0e0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 24px;
 }
