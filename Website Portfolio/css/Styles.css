@@ -204,3 +204,66 @@ footer p {
     color: #fff;
     font-size: 24px;
 }
+
+/* Global Styles */
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header, #hero, #about, #skills, #portfolio, #contact, footer {
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero, #about, #skills, #portfolio, #contact {
+        padding: 50px 20px;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #hero h2, #about h2, #skills h2, #portfolio h2, #contact h2 {
+        font-size: 28px;
+    }
+
+    #hero p, #about p, #skills p, #portfolio p, #contact p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0;
+    }
+
+    #hero, #about, #skills, #portfolio, #contact {
+        padding: 30px 15px;
+    }
+
+    .form-group input, .form-group textarea {
+        padding: 8px; 
+    }
+}
