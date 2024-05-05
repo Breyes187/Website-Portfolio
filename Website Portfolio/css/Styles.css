@@ -75,21 +75,6 @@ nav ul li a {
     margin-bottom: 40px;
 }
 
-/* Button Styles */
-.btn {
-    display: inline-block;
-    background-color: beige; /* Change button background color to beige */
-    color: #000; /* Change text color to black */
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 5px;
-    border: none; /* Remove border */
-    cursor: pointer; /* Add cursor pointer on hover */
-}
-
-.btn:hover {
-    background-color: #e0e0e0; /* Change button background color on hover */
-}
 
 /* About Section Styles */
 #about {
